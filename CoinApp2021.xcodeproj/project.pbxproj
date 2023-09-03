@@ -24,6 +24,7 @@
 		3BF177EE2AA458CB004965F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF177F12AA458CB004965F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BF177F32AA458CB004965F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF177F92AA45AF8004965F6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		3BF177D92AA458CA004965F6 = {
 			isa = PBXGroup;
 			children = (
+				3BF177F92AA45AF8004965F6 /* README.md */,
 				3BF177E42AA458CA004965F6 /* CoinApp2021 */,
 				3BF177E32AA458CA004965F6 /* Products */,
 			);
