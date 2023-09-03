@@ -13,6 +13,12 @@
 		3BF177ED2AA458CA004965F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF177EB2AA458CA004965F6 /* Main.storyboard */; };
 		3BF177EF2AA458CB004965F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF177EE2AA458CB004965F6 /* Assets.xcassets */; };
 		3BF177F22AA458CB004965F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF177F02AA458CB004965F6 /* LaunchScreen.storyboard */; };
+		3BF177FC2AA45E48004965F6 /* CoinInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF177FA2AA45E48004965F6 /* CoinInfoCell.swift */; };
+		3BF177FD2AA45E48004965F6 /* CoinInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF177FB2AA45E48004965F6 /* CoinInfoCell.xib */; };
+		3BF177FF2AA46329004965F6 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF177FE2AA46329004965F6 /* CoinData.swift */; };
+		3BF178012AA46411004965F6 /* APICallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF178002AA46411004965F6 /* APICallManager.swift */; };
+		3BF178032AA46C0B004965F6 /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF178022AA46C0B004965F6 /* CoinViewModel.swift */; };
+		3BF178052AA47287004965F6 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF178042AA47287004965F6 /* UIColor-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,13 @@
 		3BF177EE2AA458CB004965F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF177F12AA458CB004965F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BF177F32AA458CB004965F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF177F92AA45AF8004965F6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3BF177FA2AA45E48004965F6 /* CoinInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInfoCell.swift; sourceTree = "<group>"; };
+		3BF177FB2AA45E48004965F6 /* CoinInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinInfoCell.xib; sourceTree = "<group>"; };
+		3BF177FE2AA46329004965F6 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		3BF178002AA46411004965F6 /* APICallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallManager.swift; sourceTree = "<group>"; };
+		3BF178022AA46C0B004965F6 /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
+		3BF178042AA47287004965F6 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +53,7 @@
 		3BF177D92AA458CA004965F6 = {
 			isa = PBXGroup;
 			children = (
+				3BF177F92AA45AF8004965F6 /* README.md */,
 				3BF177E42AA458CA004965F6 /* CoinApp2021 */,
 				3BF177E32AA458CA004965F6 /* Products */,
 			);
@@ -58,13 +72,99 @@
 			children = (
 				3BF177E52AA458CA004965F6 /* AppDelegate.swift */,
 				3BF177E72AA458CA004965F6 /* SceneDelegate.swift */,
-				3BF177E92AA458CA004965F6 /* ViewController.swift */,
-				3BF177EB2AA458CA004965F6 /* Main.storyboard */,
-				3BF177EE2AA458CB004965F6 /* Assets.xcassets */,
-				3BF177F02AA458CB004965F6 /* LaunchScreen.storyboard */,
 				3BF177F32AA458CB004965F6 /* Info.plist */,
+				3BF178112AA47EB3004965F6 /* Supporting */,
+				3BF178102AA47E95004965F6 /* Extension */,
+				3BF1780C2AA47E1F004965F6 /* Service */,
+				3BF178082AA47DE6004965F6 /* View */,
+				3BF178072AA47DDB004965F6 /* ViewModel */,
+				3BF178062AA47DD1004965F6 /* Model */,
 			);
 			path = CoinApp2021;
+			sourceTree = "<group>";
+		};
+		3BF178062AA47DD1004965F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BF177FE2AA46329004965F6 /* CoinData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BF178072AA47DDB004965F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BF178022AA46C0B004965F6 /* CoinViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BF178082AA47DE6004965F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1780D2AA47E2F004965F6 /* Splash */,
+				3BF178092AA47DFC004965F6 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BF178092AA47DFC004965F6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3BF177E92AA458CA004965F6 /* ViewController.swift */,
+				3BF1780E2AA47E50004965F6 /* Cell */,
+				3BF177EB2AA458CA004965F6 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3BF1780C2AA47E1F004965F6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3BF178002AA46411004965F6 /* APICallManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3BF1780D2AA47E2F004965F6 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				3BF177F02AA458CB004965F6 /* LaunchScreen.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		3BF1780E2AA47E50004965F6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1780F2AA47E5C004965F6 /* TableView */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3BF1780F2AA47E5C004965F6 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				3BF177FA2AA45E48004965F6 /* CoinInfoCell.swift */,
+				3BF177FB2AA45E48004965F6 /* CoinInfoCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		3BF178102AA47E95004965F6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3BF178042AA47287004965F6 /* UIColor-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3BF178112AA47EB3004965F6 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				3BF177EE2AA458CB004965F6 /* Assets.xcassets */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +227,7 @@
 			files = (
 				3BF177F22AA458CB004965F6 /* LaunchScreen.storyboard in Resources */,
 				3BF177EF2AA458CB004965F6 /* Assets.xcassets in Resources */,
+				3BF177FD2AA45E48004965F6 /* CoinInfoCell.xib in Resources */,
 				3BF177ED2AA458CA004965F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF177EA2AA458CA004965F6 /* ViewController.swift in Sources */,
+				3BF178052AA47287004965F6 /* UIColor-Extension.swift in Sources */,
 				3BF177E62AA458CA004965F6 /* AppDelegate.swift in Sources */,
+				3BF178032AA46C0B004965F6 /* CoinViewModel.swift in Sources */,
+				3BF177FF2AA46329004965F6 /* CoinData.swift in Sources */,
+				3BF177FC2AA45E48004965F6 /* CoinInfoCell.swift in Sources */,
+				3BF178012AA46411004965F6 /* APICallManager.swift in Sources */,
 				3BF177E82AA458CA004965F6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

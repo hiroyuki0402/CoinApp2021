@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CoinApp2021
 //
-//  Created by SHIRAISHI HIROYUKI on 2023/09/03.
+//  Created by SHIRAISHI HIROYUKI on 2021/10/02.
 //
 
 import UIKit
